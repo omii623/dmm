@@ -1,5 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
 import Header from './components/header/Header'
+import Footer from './components/footer/Footer'
 import { Homepage } from './pages/home/Home'
 import Programok from './pages/program/Program'
 import Kontakt from './pages/kontakt/Kontakt'
@@ -18,6 +19,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
+      <Footer />
     </div>
   )
 }

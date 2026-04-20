@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import homeHero from "../../photos/homeHero.png";
 
 const IMAGE_OVERFLOW = "38%";
@@ -48,8 +49,8 @@ export const Homepage = (): React.JSX.Element => {
           A RENDEZVÉNYRE VALÓ BELÉPÉS INGYENES.
         </p>
 
-        <a
-          href="#programok"
+        <Link
+          to="/programok"
           style={{
             display: "inline-flex",
             alignItems: "center",
@@ -67,7 +68,7 @@ export const Homepage = (): React.JSX.Element => {
           }}
         >
           PROGRAMOK
-        </a>
+        </Link>
       </div>
 
       {/* Jobb oldal – kép, IMAGE_OVERFLOW mértékben kicsúszik jobbra */}

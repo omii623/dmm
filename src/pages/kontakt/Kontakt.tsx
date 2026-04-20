@@ -51,7 +51,7 @@ const Kontakt = (): React.JSX.Element => {
         <p style={{ margin: "0 0 4px 0" }}>Messenger</p>
         <ul style={{ margin: "0 0 26px 0", paddingLeft: "24px" }}>
           <li>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" style={{ color: "#000000", textDecoration: "underline" }}>
+            <a href="https://www.facebook.com/messages/t/100076134463467/" target="_blank" rel="noreferrer" style={{ color: "#000000", textDecoration: "underline" }}>
               SZTE Design- és művészetmenedzsment MA
             </a>
           </li>

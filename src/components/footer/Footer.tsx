@@ -13,7 +13,7 @@ import egy2 from "../../photos/egyuttmukodok/img2.png";
 
 const Footer = (): React.JSX.Element => {
   return (
-    <footer style={{ backgroundColor: "#ffffff", borderTop: "1px solid #e5e7eb" }}>
+    <footer style={{ backgroundColor: "#ffffff" }}>
 
       {/* Támogatóink sor */}
       <div style={{

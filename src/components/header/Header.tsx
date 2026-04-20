@@ -1,14 +1,17 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import feketeLogo from "../../photos/feketeLogo.png";
 
 const navItems = [
-  { label: "HOME", href: "#home" },
-  { label: "PROGRAMOK", href: "#programok" },
-  { label: "KONTAKT", href: "#kontakt" },
-  { label: "RÓLUNK", href: "#rolunk" },
+  { label: "HOME", path: "/" },
+  { label: "PROGRAMOK", path: "/programok" },
+  { label: "KONTAKT", path: "/kontakt" },
+  { label: "RÓLUNK", path: "/rolunk" },
 ];
 
 const Header = (): React.JSX.Element => {
+  const location = useLocation();
+
   return (
     <header style={{
       display: "flex",
@@ -20,13 +23,14 @@ const Header = (): React.JSX.Element => {
       gap: "8px",
     }}>
 
-      {/* Logo + cím mindig egy sorban marad */}
       <div style={{ display: "flex", alignItems: "center", gap: "16px", flex: 1 }}>
-        <img
-          src={feketeLogo}
-          alt="DMM logó"
-          style={{ height: "60px", objectFit: "contain", flexShrink: 0 }}
-        />
+        <Link to="/">
+          <img
+            src={feketeLogo}
+            alt="DMM logó"
+            style={{ height: "60px", objectFit: "contain", flexShrink: 0, display: "block" }}
+          />
+        </Link>
         <h1 style={{
           fontFamily: "'Space Grotesk', Helvetica, sans-serif",
           fontWeight: 700,
@@ -44,24 +48,27 @@ const Header = (): React.JSX.Element => {
         alignItems: "flex-end",
         gap: "2px",
       }}>
-        {navItems.map((item) => (
-          <a
-            key={item.label}
-            href={item.href}
-            style={{
-              fontFamily: "'Space Grotesk', Helvetica, sans-serif",
-              fontWeight: 700,
-              fontSize: "20px",
-              color: "#000000",
-              textDecoration: "none",
-              lineHeight: "1.2",
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = "#efd016")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "#000000")}
-          >
-            {item.label}
-          </a>
-        ))}
+        {navItems.map((item) => {
+          const isActive = location.pathname === item.path;
+          return (
+            <Link
+              key={item.label}
+              to={item.path}
+              style={{
+                fontFamily: "'Space Grotesk', Helvetica, sans-serif",
+                fontWeight: 700,
+                fontSize: "20px",
+                color: isActive ? "#efd016" : "#000000",
+                textDecoration: "none",
+                lineHeight: "1.2",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#efd016")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = isActive ? "#efd016" : "#000000")}
+            >
+              {item.label}
+            </Link>
+          );
+        })}
       </nav>
 
       <style>{`

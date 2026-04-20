@@ -1,7 +1,0 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
-User-agent: *
-Allow: /
-
-Sitemap: https://weboldal-copy-c8nk6y.teleporthq.app/sitemap.xml

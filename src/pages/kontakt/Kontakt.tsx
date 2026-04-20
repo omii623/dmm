@@ -1,10 +1,10 @@
 import React from "react";
 
-const Programok = (): React.JSX.Element => {
+const Kontakt = (): React.JSX.Element => {
   return (
     <main style={{ minHeight: "80vh", padding: "60px 80px", backgroundColor: "#ffffff" }}>
     </main>
   );
 };
 
-export default Programok;
+export default Kontakt;

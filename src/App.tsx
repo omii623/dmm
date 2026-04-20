@@ -1,29 +1,25 @@
-//import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Header from './components/header/Header'
-//import Footer from './components/footer/Footer'
-//import {Homepage} from './pages/home/Home'
-//import About from './pages/about/About'
-//import NotFound from './pages/notfound/NotFound'
+import { Homepage } from './pages/home/Home'
+import Programok from './pages/program/Program'
+import Kontakt from './pages/kontakt/Kontakt'
+import About from './pages/about/About'
 
 function App() {
   return (
-    <div className="app-container">
+    <div style={{ width: "100%", margin: 0, padding: 0 }}>
       <Header />
-      
-      
+      <main>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/programok" element={<Programok />} />
+          <Route path="/kontakt" element={<Kontakt />} />
+          <Route path="/rolunk" element={<About />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </main>
     </div>
   )
 }
-
-/*
-<main>
-        <Routes>
-          <Route path="/" element={<Navigate to="/index" replace />} />
-          <Route path="/index" element={<Homepage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </main>
-*/
 
 export default App

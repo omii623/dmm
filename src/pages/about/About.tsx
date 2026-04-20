@@ -1,12 +1,10 @@
+import React from "react";
 
-function About() {
-  
-
+const About = (): React.JSX.Element => {
   return (
-    <div className="page-container about-page">
-      
-    </div>
-  )
-}
+    <main style={{ minHeight: "80vh", padding: "60px 80px", backgroundColor: "#ffffff" }}>
+    </main>
+  );
+};
 
-export default About
+export default About;

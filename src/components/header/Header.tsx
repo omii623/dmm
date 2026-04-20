@@ -112,6 +112,10 @@ const Header = (): React.JSX.Element => {
       </nav>
 
       <style>{`
+        .header-nav {
+          width: 100%;
+          justify-content: center;
+        }
         @media (min-width: 1100px) {
           .header-nav {
             flex-direction: column !important;

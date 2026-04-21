@@ -6,7 +6,7 @@ const Kontakt = (): React.JSX.Element => {
     <section style={{
       position: "relative",
       width: "100%",
-      minHeight: "clamp(847px, calc(200vw - 600px), 1100px)",
+      minHeight: "clamp(847px, calc(2120px - 150vw), 1150px)",
       backgroundColor: "rgba(255, 255, 255, 0.1)",
       overflow: "hidden",
     }}>

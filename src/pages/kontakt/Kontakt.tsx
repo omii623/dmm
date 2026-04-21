@@ -6,18 +6,16 @@ const Kontakt = (): React.JSX.Element => {
     <section style={{
       position: "relative",
       width: "100%",
-      minHeight: "847px",
+      minHeight: "clamp(847px, calc(200vw - 600px), 1100px)",
       backgroundColor: "rgba(255, 255, 255, 0.1)",
       overflow: "hidden",
     }}>
-
-      
 
       {/* KONTAKT cím: left 91, top 93 */}
       <h2 style={{
         position: "absolute",
         left: "91px",
-        top: "93px",
+        top: "clamp(93px, calc(1693px - 150vw), 700px)",
         width: "444px",
         fontFamily: "'Space Grotesk', Helvetica, sans-serif",
         fontWeight: 700,
@@ -25,6 +23,7 @@ const Kontakt = (): React.JSX.Element => {
         lineHeight: "46px",
         color: "rgba(86, 18, 105, 0.64)",
         margin: 0,
+        zIndex: 1,
       }}>
         KONTAKT
       </h2>
@@ -33,8 +32,9 @@ const Kontakt = (): React.JSX.Element => {
       <div style={{
         position: "absolute",
         left: "91px",
-        top: "199px",
+        top: "clamp(199px, calc(1799px - 150vw), 806px)",
         width: "934px",
+        zIndex: 1,
         fontFamily: "'Space Grotesk', Helvetica, sans-serif",
         fontWeight: 400,
         fontSize: "20px",
@@ -54,7 +54,9 @@ const Kontakt = (): React.JSX.Element => {
         <ul style={{ margin: "0 0 26px 0", paddingLeft: "24px" }}>
           <li>
             <a href="https://www.facebook.com/messages/t/100076134463467/" target="_blank" rel="noreferrer" style={{ color: "#000000", textDecoration: "underline" }}>
-              SZTE Design- és művészetmenedzsment MA
+              SZTE Design- és 
+              <br/>
+              művészetmenedzsment MA
             </a>
           </li>
         </ul>
@@ -75,6 +77,7 @@ const Kontakt = (): React.JSX.Element => {
         position: "absolute",
         right: "clamp(-140px, calc(80vw - 800px), -80px)",
         top: "20px",
+        zIndex: 0,
         width: "680px",
         height: "680px",
         borderRadius: "50%",

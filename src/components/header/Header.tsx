@@ -13,80 +13,43 @@ const Header = (): React.JSX.Element => {
   const location = useLocation();
 
   return (
-    <header style={{
+    <header className="dmm-header" style={{
       display: "flex",
       flexDirection: "row",
       alignItems: "center",
+      justifyContent: "space-between",
       padding: "0px 22px",
-      gap: "30px",
-      height: "182px",
+      height: "80px",
       backgroundColor: "#ffffff",
-      flexWrap: "wrap",
     }}>
 
-      {/* Logo + cím együtt */}
-      <div style={{ display: "flex", alignItems: "center", gap: "30px", flex: 1 }}>
+      {/* Logo */}
+      <Link to="/">
+        <img
+          src={feketeLogo}
+          alt="DMM logó"
+          className="dmm-logo" style={{ height: "140px", objectFit: "contain", display: "block" }}
+        />
+      </Link>
 
-        {/* Logo wrapper: 185×93, belső kép 191×191 kilóg */}
-        <Link to="/" style={{ flexShrink: 0 }}>
-          <div style={{
-            width: "185px",
-            height: "93px",
-            backgroundColor: "#ffffff",
-            overflow: "hidden",
-            display: "flex",
-            alignItems: "center",
-            position: "relative",
-          }}>
-            <img
-              src={feketeLogo}
-              alt="DMM logó"
-              style={{
-                width: "191px",
-                height: "191px",
-                objectFit: "contain",
-                flexShrink: 0,
-              }}
-            />
-          </div>
-        </Link>
+      <style>{`
+        @media (max-width: 640px) {
+          .header-nav { gap: clamp(8px, 3vw, 32px) !important; }
+          .header-nav a { font-size: clamp(14px, 2.5vw, 18px) !important; }
+        }
+        @media (max-width: 500px) {
+          .dmm-header { padding: 0 8px !important; }
+          .dmm-logo { height: clamp(60px, 20vw, 140px) !important; }
+        }
+      `}</style>
 
-        {/* Cím wrapper: 884×65 */}
-        <div style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-          alignItems: "center",
-          padding: "10px",
-          gap: "10px",
-          height: "65px",
-        }}>
-          <h1 style={{
-            fontFamily: "'Space Grotesk', Helvetica, sans-serif",
-            fontWeight: 700,
-            fontSize: "32px",
-            lineHeight: "41px",
-            color: "#EFD016",
-            margin: 0,
-          }}>
-            DESIGN ÉS MŰVÉSZETMENEDZSMENT FESZTIVÁL
-          </h1>
-        </div>
-
-      </div>
-
-      {/* Navigáció: 265×177 */}
-      <nav style={{
+      {/* Navigáció – egy sorban */}
+      <nav className="header-nav" style={{
         display: "flex",
         flexDirection: "row",
-        justifyContent: "center",
         alignItems: "center",
-        flexWrap: "wrap",
-        gap: "8px 16px",
-        padding: "0px 3px",
-        backgroundColor: "#ffffff",
-        flexShrink: 0,
-      }} className="header-nav">
+        gap: "32px",
+      }}>
         {navItems.map((item) => {
           const isActive = location.pathname === item.path;
           return (
@@ -96,11 +59,10 @@ const Header = (): React.JSX.Element => {
               style={{
                 fontFamily: "'Space Grotesk', Helvetica, sans-serif",
                 fontWeight: 700,
-                fontSize: "32px",
-                lineHeight: "41px",
-                textAlign: "right",
+                fontSize: "18px",
                 color: isActive ? "#efd016" : "#000000",
                 textDecoration: "none",
+                whiteSpace: "nowrap",
               }}
               onMouseEnter={(e) => (e.currentTarget.style.color = "#efd016")}
               onMouseLeave={(e) => (e.currentTarget.style.color = isActive ? "#efd016" : "#000000")}
@@ -110,23 +72,6 @@ const Header = (): React.JSX.Element => {
           );
         })}
       </nav>
-
-      <style>{`
-        .header-nav {
-          width: 100%;
-          justify-content: center;
-        }
-        @media (min-width: 1100px) {
-          .header-nav {
-            flex-direction: column !important;
-            align-items: flex-end !important;
-            justify-content: center !important;
-            width: 265px !important;
-            height: 177px !important;
-            gap: 0px !important;
-          }
-        }
-      `}</style>
 
     </header>
   );

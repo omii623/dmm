@@ -59,13 +59,29 @@ const Programok = (): React.JSX.Element => {
       </div>
 
       {/* 3 oszlopos naptár */}
-      <div style={{
+      <div className="program-grid" style={{
         display: "grid",
         gridTemplateColumns: "280px 280px 280px",
         gap: "0",
         padding: "40px 60px 80px",
         justifyContent: "center",
       }}>
+        <style>{`
+          @media (max-width: 900px) {
+            .program-grid {
+              grid-template-columns: 1fr !important;
+              padding: 32px 24px 60px !important;
+            }
+            .program-grid > div {
+              border-bottom: 1px solid rgba(86, 18, 105, 0.15);
+              padding-bottom: 32px !important;
+              margin-bottom: 8px;
+            }
+            .program-grid > div:last-child {
+              border-bottom: none;
+            }
+          }
+        `}</style>
         {days.map((day) => (
           <div key={day.label} style={{ padding: "0 24px" }}>
 

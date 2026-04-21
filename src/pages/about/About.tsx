@@ -11,7 +11,14 @@ const About = (): React.JSX.Element => {
   return (
     <>
       {/* Szöveges szekció */}
-      <section style={{
+      <style>{`
+        @media (max-width: 768px) {
+          .about-text-section {
+            padding: 0 24px !important;
+          }
+        }
+      `}</style>
+      <section className="about-text-section" style={{
         width: "100%",
         minHeight: "834px",
         backgroundColor: "rgba(239, 208, 22, 0.08)",

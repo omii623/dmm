@@ -39,21 +39,19 @@ const Footer = (): React.JSX.Element => {
 
         <img src={tam1} alt="Támogató 1" style={{ height: "70px", width: "auto", objectFit: "contain" }} />
 
-        <div style={{ height: "70px", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <img src={tam2} alt="Támogató 2" style={{ height: "90px", width: "auto", objectFit: "contain" }} />
-        </div>
+        <img src={tam2} alt="Támogató 2" style={{ height: "70px", width: "auto", objectFit: "contain" }} />
 
-        <img src={tam3} alt="Támogató 3" style={{ height: "70px", width: "auto", objectFit: "contain" }} />
+        <img src={tam3} alt="Támogató 3" style={{ height: "60px", width: "auto", objectFit: "contain" }} />
 
-        <img src={tam4} alt="Támogató 4" style={{ height: "38px", width: "auto", objectFit: "contain" }} />
+        <img src={tam4} alt="Támogató 4" style={{ height: "42px", width: "auto", objectFit: "contain" }} />
 
-        <img src={tam5} alt="Támogató 5" style={{ height: "70px", width: "auto", objectFit: "contain" }} />
+        <img src={tam5} alt="Támogató 5" style={{ height: "80px", width: "auto", objectFit: "contain" }} />
 
         <img src={tam6} alt="Támogató 6" style={{ height: "66px", width: "auto", objectFit: "contain" }} />
 
         <img src={tam7} alt="Támogató 7" style={{ height: "66px", width: "auto", objectFit: "contain" }} />
 
-        <img src={tam8} alt="Támogató 8" style={{ height: "70px", width: "auto", objectFit: "contain" }} />
+        <img src={tam8} alt="Támogató 8" style={{ height: "80px", width: "auto", objectFit: "contain" }} />
 
         <img src={tam9} alt="Támogató 9" style={{ height: "30px", width: "auto", objectFit: "contain" }} />
       </div>

@@ -54,7 +54,7 @@ export const Homepage = (): React.JSX.Element => {
           font-weight: 700;
           font-size: 15px;
           color: #561269;
-          text-align: justify;
+          text-align: left; /*>-justify*/
           text-align-last: left;
           line-height: 1.6;
           letter-spacing: 0.04em;

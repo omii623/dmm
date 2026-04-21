@@ -11,6 +11,8 @@ const Kontakt = (): React.JSX.Element => {
       overflow: "hidden",
     }}>
 
+      
+
       {/* KONTAKT cím: left 91, top 93 */}
       <h2 style={{
         position: "absolute",
@@ -71,7 +73,7 @@ const Kontakt = (): React.JSX.Element => {
       {/* Kör alakú kép jobbra */}
       <div style={{
         position: "absolute",
-        right: "-80px",
+        right: "clamp(-140px, calc(80vw - 800px), -80px)",
         top: "20px",
         width: "680px",
         height: "680px",

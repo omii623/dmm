@@ -69,56 +69,43 @@ const About = (): React.JSX.Element => {
           margin: "0 auto",
           aspectRatio: "1440 / 2396",
         }}>
-          {/* photo1: jobb oldal, felül */}
-          <img src={photo1} alt="Galéria 1" style={{
+          <img src={photo1} alt="Galéria 1" loading="lazy" style={{
             position: "absolute",
             left: "43.75%", top: "1.59%",
             width: "50.07%", aspectRatio: "721/480",
             objectFit: "cover", borderRadius: "clamp(20px,4%,60px)",
           }} />
-
-          {/* photo2: bal oldal, kissé lejjebb */}
-          <img src={photo2} alt="Galéria 2" style={{
+          <img src={photo2} alt="Galéria 2" loading="lazy" style={{
             position: "absolute",
             left: "5.49%", top: "10.81%",
             width: "32.22%", aspectRatio: "464/309",
             objectFit: "cover", borderRadius: "clamp(20px,4%,60px)",
           }} />
-
-          {/* photo3: bal oldal */}
-          <img src={photo3} alt="Galéria 3" style={{
+          <img src={photo3} alt="Galéria 3" loading="lazy" style={{
             position: "absolute",
             left: "5.49%", top: "26.17%",
             width: "49.31%", aspectRatio: "710/473",
             objectFit: "cover", borderRadius: "clamp(20px,4%,60px)",
           }} />
-
-          {/* photo4: jobb oldal, álló */}
-          <img src={photo4} alt="Galéria 4" style={{
+          <img src={photo4} alt="Galéria 4" loading="lazy" style={{
             position: "absolute",
             left: "62.92%", top: "33.1%",
             width: "30.9%", aspectRatio: "445/667",
             objectFit: "cover", borderRadius: "clamp(20px,4%,60px)",
           }} />
-
-          {/* photo5: bal oldal */}
-          <img src={photo5} alt="Galéria 5" style={{
+          <img src={photo5} alt="Galéria 5" loading="lazy" style={{
             position: "absolute",
             left: "10.21%", top: "48.87%",
             width: "39.86%", aspectRatio: "574/383",
             objectFit: "cover", borderRadius: "clamp(20px,4%,60px)",
           }} />
-
-          {/* photo7: jobb oldal, széles */}
-          <img src={photo7} alt="Galéria 6" style={{
+          <img src={photo7} alt="Galéria 6" loading="lazy" style={{
             position: "absolute",
             left: "38.96%", top: "68.53%",
             width: "54.86%", aspectRatio: "790/527",
             objectFit: "cover", borderRadius: "clamp(20px,4%,60px)",
           }} />
-
-          {/* photo6: bal oldal, álló */}
-          <img src={photo6} alt="Galéria 7" style={{
+          <img src={photo6} alt="Galéria 7" loading="lazy" style={{
             position: "absolute",
             left: "5.63%", top: "71.91%",
             width: "24.51%", aspectRatio: "353/529",

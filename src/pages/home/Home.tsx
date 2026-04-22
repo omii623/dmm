@@ -117,7 +117,7 @@ export const Homepage = (): React.JSX.Element => {
 
         {/* Kép – float right, a szöveg köré öleli */}
         <div className="hero-image-col">
-          <img src={homeHero} alt="Fesztivál illusztráció" />
+          <img src={homeHero} alt="Fesztivál illusztráció" fetchPriority="high" />
         </div>
 
         {/* Szöveg – a kör köré folyik */}

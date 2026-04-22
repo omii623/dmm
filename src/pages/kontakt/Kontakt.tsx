@@ -86,6 +86,7 @@ const Kontakt = (): React.JSX.Element => {
         <img
           src={photo}
           alt="Kontakt fotó"
+          fetchPriority="high"
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />
       </div>

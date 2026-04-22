@@ -37,30 +37,30 @@ const Footer = (): React.JSX.Element => {
       <div style={rowStyle}>
         <span style={labelStyle}>Támogatóink</span>
 
-        <img src={tam1} alt="Támogató 1" style={{ height: "70px", width: "auto", objectFit: "contain" }} />
+        <img loading="lazy" src={tam1} alt="Támogató 1" style={{ height: "70px", width: "auto", objectFit: "contain" }} />
 
-        <img src={tam2} alt="Támogató 2" style={{ height: "70px", width: "auto", objectFit: "contain" }} />
+        <img loading="lazy" src={tam2} alt="Támogató 2" style={{ height: "70px", width: "auto", objectFit: "contain" }} />
 
-        <img src={tam3} alt="Támogató 3" style={{ height: "60px", width: "auto", objectFit: "contain" }} />
+        <img loading="lazy" src={tam3} alt="Támogató 3" style={{ height: "60px", width: "auto", objectFit: "contain" }} />
 
-        <img src={tam4} alt="Támogató 4" style={{ height: "42px", width: "auto", objectFit: "contain" }} />
+        <img loading="lazy" src={tam4} alt="Támogató 4" style={{ height: "42px", width: "auto", objectFit: "contain" }} />
 
-        <img src={tam5} alt="Támogató 5" style={{ height: "80px", width: "auto", objectFit: "contain" }} />
+        <img loading="lazy" src={tam5} alt="Támogató 5" style={{ height: "80px", width: "auto", objectFit: "contain" }} />
 
-        <img src={tam6} alt="Támogató 6" style={{ height: "66px", width: "auto", objectFit: "contain" }} />
+        <img loading="lazy" src={tam6} alt="Támogató 6" style={{ height: "66px", width: "auto", objectFit: "contain" }} />
 
-        <img src={tam7} alt="Támogató 7" style={{ height: "66px", width: "auto", objectFit: "contain" }} />
+        <img loading="lazy" src={tam7} alt="Támogató 7" style={{ height: "66px", width: "auto", objectFit: "contain" }} />
 
-        <img src={tam8} alt="Támogató 8" style={{ height: "80px", width: "auto", objectFit: "contain" }} />
+        <img loading="lazy" src={tam8} alt="Támogató 8" style={{ height: "80px", width: "auto", objectFit: "contain" }} />
 
-        <img src={tam9} alt="Támogató 9" style={{ height: "30px", width: "auto", objectFit: "contain" }} />
+        <img loading="lazy" src={tam9} alt="Támogató 9" style={{ height: "30px", width: "auto", objectFit: "contain" }} />
       </div>
 
       {/* Együttműködőink sor */}
       <div style={{ ...rowStyle, gap: "80px" }}>
         <span style={labelStyle}>Együttműködőink</span>
-        <img src={egy1} alt="Együttműködő 1" style={{ height: "50px", width: "auto", objectFit: "contain" }} />
-        <img src={egy2} alt="Együttműködő 2" style={{ height: "50px", width: "auto", objectFit: "contain" }} />
+        <img loading="lazy" src={egy1} alt="Együttműködő 1" style={{ height: "50px", width: "auto", objectFit: "contain" }} />
+        <img loading="lazy" src={egy2} alt="Együttműködő 2" style={{ height: "50px", width: "auto", objectFit: "contain" }} />
       </div>
 
     </footer>

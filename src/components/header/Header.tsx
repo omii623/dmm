@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import feketeLogo from "../../photos/feketeLogo.png";
+import feketeLogo from "../../photos/feketeLogo.webp";
 
 const navItems = [
   { label: "HOME", path: "/" },

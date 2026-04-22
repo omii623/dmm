@@ -1,5 +1,5 @@
 import React from "react";
-import photo from "../../photos/kontakt.png";
+import photo from "../../photos/kontakt.webp";
 
 const Kontakt = (): React.JSX.Element => {
   return (

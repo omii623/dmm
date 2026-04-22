@@ -1,15 +1,15 @@
 import React from "react";
-import tam1 from "../../photos/tamogatok/img1.png";
-import tam2 from "../../photos/tamogatok/img2.png";
-import tam3 from "../../photos/tamogatok/img3.png";
-import tam4 from "../../photos/tamogatok/img4.png";
-import tam5 from "../../photos/tamogatok/img5.png";
-import tam6 from "../../photos/tamogatok/img6.png";
-import tam7 from "../../photos/tamogatok/img7.jpg";
-import tam8 from "../../photos/tamogatok/img8.png";
+import tam1 from "../../photos/tamogatok/img1.webp";
+import tam2 from "../../photos/tamogatok/img2.webp";
+import tam3 from "../../photos/tamogatok/img3.webp";
+import tam4 from "../../photos/tamogatok/img4.webp";
+import tam5 from "../../photos/tamogatok/img5.webp";
+import tam6 from "../../photos/tamogatok/img6.webp";
+import tam7 from "../../photos/tamogatok/img7.webp";
+import tam8 from "../../photos/tamogatok/img8.webp";
 import tam9 from "../../photos/tamogatok/img9.png";
-import egy1 from "../../photos/egyuttmukodok/img1.png";
-import egy2 from "../../photos/egyuttmukodok/img2.png";
+import egy1 from "../../photos/egyuttmukodok/img1.webp";
+import egy2 from "../../photos/egyuttmukodok/img2.webp";
 
 const rowStyle: React.CSSProperties = {
   display: "flex",

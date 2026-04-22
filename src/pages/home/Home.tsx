@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import homeHero from "../../photos/homeHero.png";
+import homeHero from "../../photos/homeHero.webp";
 
 export const Homepage = (): React.JSX.Element => {
   return (

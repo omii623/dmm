@@ -1,11 +1,11 @@
 import React from "react";
-import photo1 from "../../photos/photo1.jpg";
-import photo2 from "../../photos/photo2.jpg";
-import photo3 from "../../photos/photo3.jpg";
-import photo4 from "../../photos/photo4.jpg";
-import photo5 from "../../photos/photo5.jpg";
-import photo6 from "../../photos/photo6.jpg";
-import photo7 from "../../photos/photo7.jpg";
+import photo1 from "../../photos/photo1.webp";
+import photo2 from "../../photos/photo2.webp";
+import photo3 from "../../photos/photo3.webp";
+import photo4 from "../../photos/photo4.webp";
+import photo5 from "../../photos/photo5.webp";
+import photo6 from "../../photos/photo6.webp";
+import photo7 from "../../photos/photo7.webp";
 
 const About = (): React.JSX.Element => {
   return (

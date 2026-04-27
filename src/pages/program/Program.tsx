@@ -20,7 +20,7 @@ const days = [
       "10:00-11:30 SANSZ\nNem Látható Fogyatékosságok Akadálymentesítése",
       "Ebéd Szünet",
       "14:00-15:30 Akadálymentesítés A Múzeumban - Séta Szatmári Csillával",
-      "18:00 Labrisz Egyesület- Filmvetítés (SZÜNET Kávézó)",
+      "18:00 Labrisz Egyesület- Filmvetítés (SZÜNET ifjusági presszó)",
     ],
   },
   {

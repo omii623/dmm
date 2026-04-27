@@ -52,7 +52,7 @@ export const Homepage = (): React.JSX.Element => {
         .hero-text {
           font-family: 'Space Grotesk', Helvetica, sans-serif;
           font-weight: 700;
-          font-size: 15px;
+          font-size: 18px;
           color: #561269;
           text-align: left; /*>-justify*/
           text-align-last: left;
@@ -108,7 +108,7 @@ export const Homepage = (): React.JSX.Element => {
 
         @media (max-width: 550px) {
           .hero-text {
-            font-size: 12px;
+            font-size: 15px;
           }
         }
       `}</style>
@@ -123,10 +123,11 @@ export const Homepage = (): React.JSX.Element => {
         {/* Szöveg – a kör köré folyik */}
         <div className="hero-text-col">
           <h1 className="hero-desktop-title">{`DESIGN ÉS\nMŰVÉSZETMENEDZSMENT\nFESZTIVÁL`}</h1>
-
+          <br /><br /><br /><br /><br /><br />
           <p className="hero-text">
             IDÉN EGY SZÁMUNKRA FONTOS TÉMÁT ÁLLÍTUNK A KÖZÉPPONTBA:
             ESÉLYEGYENLŐSÉG A DESIGNBAN ÉS A MŰVÉSZETBEN.
+            {/*
             <br />
             OLYAN LOKÁLIS PARTNEREKKEL DOLGOZHATUNK EGYÜTT, AKIKNEK SEGÍTSÉGÉVEL
             TÖBB HÁTRÁNYOS HELYZETŰ HALLGATÓT IS BEVONHATUNK AZ ESEMÉNYBE:
@@ -136,8 +137,9 @@ export const Homepage = (): React.JSX.Element => {
             SZTE SANSZ IRODA
             <br /><br />
             A RENDEZVÉNYRE VALÓ BELÉPÉS INGYENES.
+            */}
           </p>
-          <br /><br />
+          <br /><br /><br /><br /><br /><br />
           <Link to="/programok" className="hero-btn">
             PROGRAMOK
           </Link>

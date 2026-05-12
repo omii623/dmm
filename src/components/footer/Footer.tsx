@@ -8,6 +8,8 @@ import tam6 from "../../photos/tamogatok/img6.webp";
 import tam7 from "../../photos/tamogatok/img7.webp";
 import tam8 from "../../photos/tamogatok/img8.webp";
 import tam9 from "../../photos/tamogatok/img9.png";
+import tam10 from "../../photos/tamogatok/img10.png";
+import tam11 from "../../photos/tamogatok/img11.png";
 import egy1 from "../../photos/egyuttmukodok/img1.webp";
 import egy2 from "../../photos/egyuttmukodok/img2.webp";
 
@@ -54,6 +56,11 @@ const Footer = (): React.JSX.Element => {
         <img loading="lazy" src={tam8} alt="Támogató 8" style={{ height: "80px", width: "auto", objectFit: "contain" }} />
 
         <img loading="lazy" src={tam9} alt="Támogató 9" style={{ height: "30px", width: "auto", objectFit: "contain" }} />
+
+        <img loading="lazy" src={tam10} alt="Támogató 10" style={{ height: "40px", width: "auto", objectFit: "contain" }} />
+
+        <img loading="lazy" src={tam11} alt="Támogató 11" style={{ height: "60px", width: "auto", objectFit: "contain" }} />
+
       </div>
 
       {/* Együttműködőink sor */}

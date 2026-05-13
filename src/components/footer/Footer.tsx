@@ -39,35 +39,64 @@ const Footer = (): React.JSX.Element => {
       <div style={rowStyle}>
         <span style={labelStyle}>Támogatóink</span>
 
-        <img loading="lazy" src={tam1} alt="Támogató 1" style={{ height: "70px", width: "auto", objectFit: "contain" }} />
+        <a href="https://www.facebook.com/share/1ENK6nXcMr/" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src={tam1} alt="Támogató 1" style={{ height: "70px", width: "auto", objectFit: "contain" }} />
+        </a>
 
-        <img loading="lazy" src={tam2} alt="Támogató 2" style={{ height: "70px", width: "auto", objectFit: "contain" }} />
+        <a href="https://www.facebook.com/share/18jaE7VYZw/" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src={tam2} alt="Támogató 2" style={{ height: "70px", width: "auto", objectFit: "contain" }} />
+        </a>
 
-        <img loading="lazy" src={tam3} alt="Támogató 3" style={{ height: "60px", width: "auto", objectFit: "contain" }} />
+        <a href="https://arts.u-szeged.hu/" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src={tam3} alt="Támogató 3" style={{ height: "60px", width: "auto", objectFit: "contain" }} />
+        </a>
 
-        <img loading="lazy" src={tam4} alt="Támogató 4" style={{ height: "42px", width: "auto", objectFit: "contain" }} />
+        <a href="https://jateklub.hu/" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src={tam4} alt="Támogató 4" style={{ height: "42px", width: "auto", objectFit: "contain" }} />
+        </a>
 
-        <img loading="lazy" src={tam5} alt="Támogató 5" style={{ height: "80px", width: "auto", objectFit: "contain" }} />
+        <a href="https://www.facebook.com/share/1GM7xx8zbf/" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src={tam5} alt="Támogató 5" style={{ height: "80px", width: "auto", objectFit: "contain" }} />
+        </a>
 
-        <img loading="lazy" src={tam6} alt="Támogató 6" style={{ height: "66px", width: "auto", objectFit: "contain" }} />
+        <a href="https://www.facebook.com/share/1GeoW81eaR/" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src={tam6} alt="Támogató 6" style={{ height: "66px", width: "auto", objectFit: "contain" }} />
+        </a>
 
-        <img loading="lazy" src={tam7} alt="Támogató 7" style={{ height: "66px", width: "auto", objectFit: "contain" }} />
+        <a href="https://tiszatajonline.hu/" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src={tam7} alt="Támogató 7" style={{ height: "66px", width: "auto", objectFit: "contain" }} />
+        </a>
 
-        <img loading="lazy" src={tam8} alt="Támogató 8" style={{ height: "80px", width: "auto", objectFit: "contain" }} />
+        <a href="https://www.agoraszeged.hu/" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src={tam8} alt="Támogató 8" style={{ height: "80px", width: "auto", objectFit: "contain" }} />
+        </a>
 
-        <img loading="lazy" src={tam9} alt="Támogató 9" style={{ height: "30px", width: "auto", objectFit: "contain" }} />
+        <a href="https://borpont.com/" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src={tam9} alt="Támogató 9" style={{ height: "30px", width: "auto", objectFit: "contain" }} />
+        </a>
 
-        <img loading="lazy" src={tam10} alt="Támogató 10" style={{ height: "40px", width: "auto", objectFit: "contain" }} />
+        <a href="https://www.bortarsasag.hu/hu" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src={tam10} alt="Támogató 10" style={{ height: "40px", width: "auto", objectFit: "contain" }} />
+        </a>
 
-        <img loading="lazy" src={tam11} alt="Támogató 11" style={{ height: "60px", width: "auto", objectFit: "contain" }} />
+        <a href="https://b32kulturter.hu/" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src={tam11} alt="Támogató 11" style={{ height: "60px", width: "auto", objectFit: "contain" }} />
+        </a>
 
       </div>
 
       {/* Együttműködőink sor */}
       <div style={{ ...rowStyle, gap: "80px" }}>
         <span style={labelStyle}>Együttműködőink</span>
-        <img loading="lazy" src={egy1} alt="Együttműködő 1" style={{ height: "50px", width: "auto", objectFit: "contain" }} />
-        <img loading="lazy" src={egy2} alt="Együttműködő 2" style={{ height: "50px", width: "auto", objectFit: "contain" }} />
+
+        <a href="https://u-szeged.hu/sansz/udvozoljuk" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src={egy1} alt="Együttműködő 1" style={{ height: "50px", width: "auto", objectFit: "contain" }} />
+        </a>
+
+        <a href="https://www.mentor.hook.hu/" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src={egy2} alt="Együttműködő 2" style={{ height: "50px", width: "auto", objectFit: "contain" }} />
+        </a>
+
       </div>
 
     </footer>
